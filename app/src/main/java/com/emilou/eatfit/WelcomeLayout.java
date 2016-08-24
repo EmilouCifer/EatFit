@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.emilou.eatfit.activity.LoginActivity;
 import com.emilou.eatfit.helper.PrefManager;
 
 public class WelcomeLayout extends AppCompatActivity {
@@ -121,7 +122,7 @@ public class WelcomeLayout extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeLayout.this, LaunchScreen.class));
+        startActivity(new Intent(WelcomeLayout.this, LoginActivity.class));
         finish();
     }
 
