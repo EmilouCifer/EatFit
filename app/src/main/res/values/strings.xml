@@ -37,6 +37,6 @@
 
     <string name="action_settings">Settings</string>
     <string name="login_masuk">Masuk</string>
-    <string name="login_daftar">Daftar sekarang</string>
+    <string name="login_daftar">Daftar sekarang ?</string>
 
 </resources>

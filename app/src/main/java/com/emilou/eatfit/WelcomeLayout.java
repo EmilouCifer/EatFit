@@ -21,6 +21,9 @@ import android.widget.TextView;
 import com.emilou.eatfit.activity.LoginActivity;
 import com.emilou.eatfit.helper.PrefManager;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class WelcomeLayout extends AppCompatActivity {
 
     private ViewPager viewPager;
@@ -61,6 +64,12 @@ public class WelcomeLayout extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/Bariol_Regular.otf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        );
 
         prefManager = new PrefManager(this);
         if (!prefManager.isFirstTimeLaunch()) {
@@ -122,6 +131,11 @@ public class WelcomeLayout extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     private void addBottomDots(int currentPage) {
