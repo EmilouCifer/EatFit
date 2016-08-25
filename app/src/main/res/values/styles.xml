@@ -2,11 +2,14 @@
 
     <style name="AppTheme" parent="EatFitTheme" />
     <!-- Base application theme. -->
-    <style name="EatFitTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="EatFitTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/primaryText</item>
+        <item name="android:textColorSecondary">@color/secondaryText</item>
+        <item name="android:divider">@color/divider</item>
         <item name="colorControlHighlight">@color/colorPrimaryLight</item>
     </style>
 

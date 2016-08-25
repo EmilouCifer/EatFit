@@ -26,7 +26,7 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".activity.LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:theme="@style/EatFitTheme"/>
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/title_activity_main"
